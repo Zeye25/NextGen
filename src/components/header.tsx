@@ -1,25 +1,27 @@
 import Link from "next/link";
 
 export default function Header() {
-    return (
-        <div className="border-black/10 border-b h-[40px] flex
-        items-center justify-between px-5">
-            <div>Logo</div>
+  return (
+    <div
+      className="border-black/10 border-b h-[40px] flex
+        items-center justify-between px-5"
+    >
+      <div>Logo</div>
 
-            <ul className="flex items-center gap-3">
-                <li>
-                    <Link href="/">Home</Link>
-                </li>
-                <li>
-                    <Link href="/Events">Events</Link>
-                </li>
-                <li>
-                    <Link href="/Workshops">Workshops</Link>
-                </li>
-                <li>
-                    <Link href="/Donate">Donate</Link>
-                </li>
-            </ul>
-        </div>
-    );
+      <ul className="flex items-center gap-3">
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/events">Events</Link>
+        </li>
+        <li>
+          <Link href="/workshops">Workshops</Link>
+        </li>
+        <li>
+          <Link href="/donate">Donate</Link>
+        </li>
+      </ul>
+    </div>
+  );
 }
